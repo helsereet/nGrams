@@ -112,30 +112,6 @@ namespace TextAnalysis
             return result.Distinct().ToList();
         }
 
-        //private static Dictionary<string, string> CreateDictionaryFromGroupedNGram(List<List<string>> nGram, NGram whatGram)
-        //{
-        //    var result = new Dictionary<string, string>();
-        //    string[] keyAndValue = new string[2];
-        //    switch (whatGram)
-        //    {
-        //        case NGram.biGrim:
-        //            foreach (var group in nGram)
-        //            {
-        //                keyAndValue = KeyAndValueFromBiGramGroup(group);
-        //                result.Add(keyAndValue[0], keyAndValue[1]);
-        //            }
-        //            break;
-        //        case NGram.triGrim:
-        //            foreach (var group in nGram)
-        //            {
-        //                keyAndValue = KeyAndValueFromTriGramGroup(group);
-        //                result.Add(keyAndValue[0], keyAndValue[1]);
-        //            }
-        //            break;
-        //    }
-        //    return result;
-        //}
-
         private static Dictionary<string, string> CreateDictionary(List<List<string>> biGram, List<List<string>> triGram)
         {
             var result = new Dictionary<string, string>();
